@@ -36,5 +36,27 @@ namespace labiryntGame
         {
 
         }
+
+        private void label45_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void finish(object sender, EventArgs e)
+        {
+            MessageBox.Show("Winner");
+            this.Close();
+        }
+        private void start()
+        {
+            Point startingpoint = labelstart.Location;
+            startingpoint.Offset(230, 0);
+            Cursor.Position = PointToScreen(startingpoint);
+        }
+        private void game_over(object sender, EventArgs e)
+        {
+            MessageBox.Show("You hit the wall. Starting again...");
+            start();
+        }
     }
 }
