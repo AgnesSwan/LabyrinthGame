@@ -17,31 +17,11 @@ namespace labiryntGame
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label8_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void Form1_Load(object sender, EventArgs e)
         {
 
         }
-
-        private void label45_Click(object sender, EventArgs e)
-        {
-
-        }
-
+        
         private void finish(object sender, EventArgs e)
         {
             MessageBox.Show("Winner");
@@ -50,8 +30,12 @@ namespace labiryntGame
         private void start()
         {
             Point startingpoint = labelstart.Location;
-            startingpoint.Offset(230, 0);
+            startingpoint.Offset(30,10);
             Cursor.Position = PointToScreen(startingpoint);
+        }
+        private void time()
+        {
+
         }
         private void game_over(object sender, EventArgs e)
         {

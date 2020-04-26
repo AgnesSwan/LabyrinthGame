@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.labelstart = new System.Windows.Forms.Label();
+            this.label45 = new System.Windows.Forms.Label();
             this.label44 = new System.Windows.Forms.Label();
             this.label43 = new System.Windows.Forms.Label();
             this.label42 = new System.Windows.Forms.Label();
@@ -73,8 +75,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label45 = new System.Windows.Forms.Label();
-            this.labelstart = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -130,6 +130,23 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(440, 386);
             this.panel1.TabIndex = 0;
+            // 
+            // labelstart
+            // 
+            this.labelstart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.labelstart.Location = new System.Drawing.Point(230, 0);
+            this.labelstart.Name = "labelstart";
+            this.labelstart.Size = new System.Drawing.Size(28, 23);
+            this.labelstart.TabIndex = 45;
+            // 
+            // label45
+            // 
+            this.label45.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.label45.Location = new System.Drawing.Point(53, 367);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(26, 54);
+            this.label45.TabIndex = 44;
+            this.label45.MouseHover += new System.EventHandler(this.finish);
             // 
             // label44
             // 
@@ -461,7 +478,6 @@
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(274, 10);
             this.label8.TabIndex = 7;
-            this.label8.Click += new System.EventHandler(this.label8_Click);
             this.label8.MouseHover += new System.EventHandler(this.game_over);
             // 
             // label7
@@ -516,7 +532,6 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(50, 10);
             this.label2.TabIndex = 1;
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             this.label2.MouseHover += new System.EventHandler(this.game_over);
             // 
             // label1
@@ -526,34 +541,17 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(221, 10);
             this.label1.TabIndex = 0;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             this.label1.MouseHover += new System.EventHandler(this.game_over);
-            // 
-            // label45
-            // 
-            this.label45.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.label45.Location = new System.Drawing.Point(53, 367);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(26, 54);
-            this.label45.TabIndex = 44;
-            this.label45.MouseHover += new System.EventHandler(this.finish);
-            // 
-            // labelstart
-            // 
-            this.labelstart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.labelstart.Location = new System.Drawing.Point(230, 0);
-            this.labelstart.Name = "labelstart";
-            this.labelstart.Size = new System.Drawing.Size(28, 23);
-            this.labelstart.TabIndex = 45;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(493, 417);
             this.Controls.Add(this.panel1);
+            this.MaximizeBox = false;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Labyrinth";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
